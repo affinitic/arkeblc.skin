@@ -5,26 +5,8 @@
 
   <!-- 'arkeblc.skin' Zope 3 browser layer -->
   <interface
-      interface=".interfaces.IThemeSpecific"
+      interface=".interfaces.IArkeblcTheme"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
       name="arkeblc.skin"
       />
-  
-  <!-- Viewlets registration -->
-  <!-- Zope 3 browser resources -->
-
-  <!-- Resource directory for images -->
-  <browser:resourceDirectory
-      name="arkeblc.skin.images"
-      directory="images"
-      layer=".interfaces.IThemeSpecific"
-      />
-
-  <!-- Resource directory for stylesheets -->
-  <browser:resourceDirectory
-      name="arkeblc.skin.stylesheets"
-      directory="stylesheets"
-      layer=".interfaces.IThemeSpecific"
-      />
-
 </configure>

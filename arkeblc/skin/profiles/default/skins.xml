@@ -2,23 +2,23 @@
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
    default_skin="arkeblc.skin">
 
- <object name="arkeblc_skin_custom_images"
-    meta_type="Filesystem Directory View"
-    directory="arkeblc.skin:skins/arkeblc_skin_custom_images"/>
- <object name="arkeblc_skin_custom_templates"
-    meta_type="Filesystem Directory View"
-    directory="arkeblc.skin:skins/arkeblc_skin_custom_templates"/>
- <object name="arkeblc_skin_styles"
-    meta_type="Filesystem Directory View"
-    directory="arkeblc.skin:skins/arkeblc_skin_styles"/>
+ <object name="arkeblc_images"
+         meta_type="Filesystem Directory View"
+         directory="arkeblc.skin:skins/arkeblc_images"/>
+ <object name="arkeblc_templates"
+         meta_type="Filesystem Directory View"
+         directory="arkeblc.skin:skins/arkeblc_templates"/>
+ <object name="arkeblc_styles"
+         meta_type="Filesystem Directory View"
+         directory="arkeblc.skin:skins/arkeblc_styles"/>
 
  <skin-path name="arkeblc.skin" based-on="Plone Default">
-  <layer name="arkeblc_skin_custom_images"
-     insert-after="custom"/>
-  <layer name="arkeblc_skin_custom_templates"
-     insert-after="arkeblc_skin_custom_images"/>
-  <layer name="arkeblc_skin_styles"
-     insert-after="arkeblc_skin_custom_templates"/>
+  <layer name="arkeblc_images"
+         insert-after="custom"/>
+  <layer name="arkeblc_templates"
+         insert-after="arkeblc_images"/>
+  <layer name="arkeblc_styles"
+         insert-after="arkeblc_templates"/>
  </skin-path>
 
 </object>
