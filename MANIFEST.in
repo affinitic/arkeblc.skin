@@ -1,0 +1,2 @@
+recursive-include arkeblc *
+global-exclude *pyc

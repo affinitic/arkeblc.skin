@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="arkeblc.skin.various"
+               version="20100131-01"
+               handler="arkeblc.skin.setuphandlers.setupVarious"
+               title="arkeblc.skin: miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+  </import-step>
+</import-steps>
